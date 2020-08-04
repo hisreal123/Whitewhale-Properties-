@@ -1,3 +1,64 @@
+.loader {
+  position: fixed;
+  background-color: purple;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+.loader .blurLoader span {
+  color: white;
+  font-size: 2rem;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 500px) {
+  .loader .blurLoader span {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .loader .blurLoader span {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .loader .blurLoader span {
+    font-size: 3rem;
+  }
+}
+.loader .progressLoader {
+  width: 200px;
+  height: 3px;
+  background-color: grey;
+  border-radius: 10px;
+}
+.loader .progressLoader .loaded {
+  width: 0;
+  height: inherit;
+  background-color: whitesmoke;
+  border-radius: inherit;
+  animation: loader 5s linear normal;
+}
+@keyframes loader {
+  0% {
+    width: 10%;
+  }
+  30% {
+    width: 30%;
+  }
+  70% {
+    width: 75%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
 .topLead, section.ContactUS .container h2, .SERVICES .container h2 {
   font-size: 2rem;
   font-weight: 600;
@@ -15,14 +76,10 @@
   color: #b79145;
 }
 
-.in_animation {
-  transform: translateY(0) !important;
-  opacity: 1;
-}
-
 body {
   overflow-x: hidden;
   overflow-y: visible;
+  overflow-y-width: 200px;
 }
 
 nav.tpNav {

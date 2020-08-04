@@ -1,33 +1,31 @@
 $(document).ready(function () {
 
     let tpNav = $('.tpNav');
-    let logo = $('.logo');
     let wrap = $('.wrap')
     let smallWtihLogo = $('.wthLogo')
     let banner = $('.banner')
     let imgS = $(".imgBox");
-
+    let win = $(window)
+    
     // adding shadow  to all the imgs when the page finish loading 
-
     $(".boxImg").addClass('shadow');
+
+    // animate window
+    
+
+    // loader
+    $('.loader').fadeOut(1000)
+
 
     $(window).scroll(function () {
         let wScroll = $(this).scrollTop();
-
-
         if(wScroll > 100) {
           tpNav.addClass('fixed-top')
         }
     });
 
-
-
-
-
     // away from scroll
-    // Showing h1.logo
-    logo.delay().addClass('in_animation')
-    smallWtihLogo.delay().addClass('in_animation')
+
 
     $('.banner').owlCarousel({
       autoplay: true,
