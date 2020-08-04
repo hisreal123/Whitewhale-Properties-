@@ -1,0 +1,298 @@
+
+//  paceholder
+$transition : all .2s ease-in-out
+$advTransition : all 0.2s cubic-bezier(.79,.14,.14,1.3)
+
+
+.topLead
+  font:
+    size: 2rem
+    weight: 600
+  color: #222222ff
+
+  @media screen and (max-width: 400px)
+    font:
+          size: 20px
+
+.small
+  letter-spacing: 3px
+  font-weight: bold
+  color: darken(#c6a769ff, 10)
+
+.in_animation
+  transform: translateY(0) !important
+  opacity: 1
+
+body
+  overflow-x: hidden
+  overflow-y: visible
+
+// NAV.tpNav
+nav.tpNav
+  background-color: #8333e9 !important
+
+  a
+    color: white !important
+    transition: $transition
+
+    img
+      height: 40px
+      width: 40px
+
+  @media screen and ( max-width: 400px )
+    position: relative
+  @media screen and (min-width: 800px)
+    z-index: 99
+    // width: 100p
+
+      &:hover
+        color: lightgrey !important
+
+  .bgLight
+    background-color: white !important
+
+    a
+      color: grey !important
+
+      &:hover
+        color: lighten(grey, 10)(grey) !important
+
+
+// banner
+.banner
+  height: 550px
+  width: 100%
+  background:
+    color: white
+    
+    
+  .bannerChildWrap
+    height: 600px
+    background:
+      color: transparentize(purple,  .5)
+      repeat: no-repeat
+      size: cover
+      position: center center
+      blend-mode: multiply
+     
+
+    .ctn
+      .logo
+        font:
+          family: monspace
+          weight: bold
+          padding: 30px
+        color: white 
+
+
+@media screen and (max-width: 400px)
+  .banner
+    height: 400px !important
+
+    .bannerChildWrap
+      .ctn
+        .logo
+          font-size: 20px
+          padding: 50px 
+        small
+          display: none
+
+@media screen and ( max-width: 768px  )
+  .banner
+    .bannerChildWrap
+      .ctn
+        .logo
+          font-size: 1.8rem
+          text-align: center
+
+  
+
+@media screen and (min-width: 768px)
+  .banner
+    margin-bottom: 30px 
+    .bannerChildWrap
+      .ctn
+        .logo
+          font-size: 2.5rem
+        small
+
+   
+
+// PORTFOLIO
+.profolio
+  background-color: lightgrey
+  .pt_tp
+    padding: 50px 0
+    .topLead
+      color: purple
+
+  .pt_showCase
+    .showCase_grid
+      display: block
+      padding: 5px
+      overflow: visible
+
+
+@media screen and ( max-width: 400px )
+  .profolio
+    .pt_tp
+      small
+      .topLead
+        margin-top: 5px
+        
+// SERVICES
+.SERVICES
+  padding: 60px 0 80px 0
+  background-color:  whitesmoke
+  // margin-bottom:  200px
+
+  .container
+    color: white
+    // position: relative
+
+    h2
+      @extend .topLead
+      color: purple
+
+
+    p.cajo
+      color: #222222ff
+
+    button
+        background-color: #222222ff
+        width: 100px
+        border-radius: 0
+        padding: 5px 
+
+  .oLay
+    background-color: transparentize(black, .8)
+    position: fixed
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    z-index: 2
+    display: none
+
+  .floatContent
+    position: fixed
+    min-height: auto
+    max-height: 80vh 
+    min-width: auto
+    max-width: 80%
+    background-color: white
+    padding: 20px
+    top: 10vh !important 
+    left:  5%
+    right: 5%
+    border-radius:  1% 
+    z-index: 3
+    display: none
+    margin: 0 auto
+    overflow: scroll
+
+
+    p.heading
+      color: purple !important
+      font-weight: bold
+
+    i
+      color: purple
+      position: fixed
+      left: 90%
+      top: 30px
+
+    ul
+      padding: 10px
+      
+      li
+        list-style-type:  disc
+        
+        p
+          color: #222222ff !important
+          font:
+            weight: 50
+            size: 1rem
+          margin-left: 10px 
+        
+
+
+
+
+
+
+@media screen and ( max-width:  400px)  
+  .SERVICES
+    padding: 20px  
+
+    .container
+      h2
+        font-size: 1.6rem
+        margin: 15px 0  10px 0 
+
+      small
+        font-size: .8rem
+
+
+  // ContactUs Section
+
+section.ContactUS
+  background-color: lightgrey !important
+  padding: 30px 0  20px 0
+  margin-bottom: 200px
+
+  .container
+    small
+      text-align: center !important
+    h2
+      margin-top: 20px 
+      @extend  .topLead
+      color: purple
+
+    .socialIcons
+      .iconWrap
+        // height: 50px
+        // width: 50px
+        margin: 30px auto
+
+      i.fab
+        font:
+          weight: bolder
+          size: 1.5rem
+        color: darken(purple, 10)
+
+        &:hover
+          cursor: pointer
+
+  
+
+.footer
+  height: 200px
+  color: lightgrey
+  background-color: #222222ff
+  bottom: 0
+  z-index: -1
+
+  .pInfo
+    h3
+
+      smart
+        color: #c6a769ff !important
+
+    p
+      font-size: .6rem
+  .pCenter
+    ul.nav
+      li
+        a
+          color: lightgrey
+  .pOInfo
+    p.last
+      font:
+        size: .5rem !important
+
+
+  @media screen and ( max-width: 400px )
+    .pInfo
+      h3
+        font-size: 1.4rem 

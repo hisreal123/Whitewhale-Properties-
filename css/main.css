@@ -1,0 +1,253 @@
+.topLead, section.ContactUS .container h2, .SERVICES .container h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #222222ff;
+}
+@media screen and (max-width: 400px) {
+  .topLead, section.ContactUS .container h2, .SERVICES .container h2 {
+    font-size: 20px;
+  }
+}
+
+.small {
+  letter-spacing: 3px;
+  font-weight: bold;
+  color: #b79145;
+}
+
+.in_animation {
+  transform: translateY(0) !important;
+  opacity: 1;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+nav.tpNav {
+  background-color: #8333e9 !important;
+}
+nav.tpNav a {
+  color: white !important;
+  transition: all 0.2s ease-in-out;
+}
+nav.tpNav a img {
+  height: 40px;
+  width: 40px;
+}
+@media screen and (max-width: 400px) {
+  nav.tpNav {
+    position: relative;
+  }
+}
+@media screen and (min-width: 800px) {
+  nav.tpNav {
+    z-index: 99;
+  }
+}
+nav.tpNav .bgLight {
+  background-color: white !important;
+}
+nav.tpNav .bgLight a {
+  color: grey !important;
+}
+nav.tpNav .bgLight a:hover {
+  color: #9a9a9a grey !important;
+}
+
+.banner {
+  height: 550px;
+  width: 100%;
+  background-color: white;
+}
+.banner .bannerChildWrap {
+  height: 600px;
+  background-color: rgba(128, 0, 128, 0.5);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: multiply;
+}
+.banner .bannerChildWrap .ctn .logo {
+  font-family: monspace;
+  font-weight: bold;
+  font-padding: 30px;
+  color: white;
+}
+
+@media screen and (max-width: 400px) {
+  .banner {
+    height: 400px !important;
+  }
+  .banner .bannerChildWrap .ctn .logo {
+    font-size: 20px;
+    padding: 50px;
+  }
+  .banner .bannerChildWrap .ctn small {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .banner .bannerChildWrap .ctn .logo {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .banner {
+    margin-bottom: 30px;
+  }
+  .banner .bannerChildWrap .ctn .logo {
+    font-size: 2.5rem;
+  }
+}
+.profolio {
+  background-color: lightgrey;
+}
+.profolio .pt_tp {
+  padding: 50px 0;
+}
+.profolio .pt_tp .topLead, .profolio .pt_tp section.ContactUS .container h2, section.ContactUS .container .profolio .pt_tp h2, .profolio .pt_tp .SERVICES .container h2, .SERVICES .container .profolio .pt_tp h2 {
+  color: purple;
+}
+.profolio .pt_showCase .showCase_grid {
+  display: block;
+  padding: 5px;
+  overflow: visible;
+}
+
+@media screen and (max-width: 400px) {
+  .profolio .pt_tp .topLead, .profolio .pt_tp section.ContactUS .container h2, section.ContactUS .container .profolio .pt_tp h2, .profolio .pt_tp .SERVICES .container h2, .SERVICES .container .profolio .pt_tp h2 {
+    margin-top: 5px;
+  }
+}
+.SERVICES {
+  padding: 60px 0 80px 0;
+  background-color: whitesmoke;
+}
+.SERVICES .container {
+  color: white;
+}
+.SERVICES .container h2 {
+  color: purple;
+}
+.SERVICES .container p.cajo {
+  color: #222222ff;
+}
+.SERVICES .container button {
+  background-color: #222222ff;
+  width: 100px;
+  border-radius: 0;
+  padding: 5px;
+}
+.SERVICES .oLay {
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  display: none;
+}
+.SERVICES .floatContent {
+  position: fixed;
+  min-height: auto;
+  max-height: 80vh;
+  min-width: auto;
+  max-width: 80%;
+  background-color: white;
+  padding: 20px;
+  top: 10vh !important;
+  left: 5%;
+  right: 5%;
+  border-radius: 1%;
+  z-index: 3;
+  display: none;
+  margin: 0 auto;
+  overflow: scroll;
+}
+.SERVICES .floatContent p.heading {
+  color: purple !important;
+  font-weight: bold;
+}
+.SERVICES .floatContent i {
+  color: purple;
+  position: fixed;
+  left: 90%;
+  top: 30px;
+}
+.SERVICES .floatContent ul {
+  padding: 10px;
+}
+.SERVICES .floatContent ul li {
+  list-style-type: disc;
+}
+.SERVICES .floatContent ul li p {
+  color: #222222ff !important;
+  font-weight: 50;
+  font-size: 1rem;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 400px) {
+  .SERVICES {
+    padding: 20px;
+  }
+  .SERVICES .container h2 {
+    font-size: 1.6rem;
+    margin: 15px 0 10px 0;
+  }
+  .SERVICES .container small {
+    font-size: 0.8rem;
+  }
+}
+section.ContactUS {
+  background-color: lightgrey !important;
+  padding: 30px 0 20px 0;
+  margin-bottom: 200px;
+}
+section.ContactUS .container small {
+  text-align: center !important;
+}
+section.ContactUS .container h2 {
+  margin-top: 20px;
+  color: purple;
+}
+section.ContactUS .container .socialIcons .iconWrap {
+  margin: 30px auto;
+}
+section.ContactUS .container .socialIcons i.fab {
+  font-weight: bolder;
+  font-size: 1.5rem;
+  color: #4d004d;
+}
+section.ContactUS .container .socialIcons i.fab:hover {
+  cursor: pointer;
+}
+
+.footer {
+  height: 200px;
+  color: lightgrey;
+  background-color: #222222ff;
+  bottom: 0;
+  z-index: -1;
+}
+.footer .pInfo h3 smart {
+  color: #c6a769ff !important;
+}
+.footer .pInfo p {
+  font-size: 0.6rem;
+}
+.footer .pCenter ul.nav li a {
+  color: lightgrey;
+}
+.footer .pOInfo p.last {
+  font-size: 0.5rem !important;
+}
+@media screen and (max-width: 400px) {
+  .footer .pInfo h3 {
+    font-size: 1.4rem;
+  }
+}
